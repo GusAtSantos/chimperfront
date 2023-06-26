@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+a {
+    text-decoration: none;
+    color: #4d4d4d;
+    transition: .3s;
+}
+
+svg {
+    margin: 8px;
+    fill: #0d0cb5;
+    transition: .3s;
+}
+
+a:hover,
+svg:hover {
+    color: #08076d;
+    fill: #08076d;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+footer {
+    position: relative;
+    padding: 8em 0;
+    background-color: #333;
+}
+
+footer .container {
+    grid-template-areas: "a b c d e";
+    justify-content: space-around;
+    width: 1140px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+footer h2 {
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+footer p {
+    color: #737373;
+    line-height: 1.7;
+}
+
+footer ul {
+    display: block;
+}
+
+footer ul li {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #999999;
+    transition: .2s;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+footer svg {
+    fill: #999999;
+    margin: 0;
+    margin-right: 16px;
+    transition: .2s;
+}
+
+footer svg:hover {
+    fill: white;
+}
+
+form {
+    position: relative;
+    height: 45px;
+}
+
+#header-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px 0px;
+    border-bottom: 1px;
+    border: 1px solid #e9ecef;
+}
+
+#header-1 a {
+    color: #0d0cb5;
+}
+
+#header-1 div span {
+    margin-left: 8px;
+    font-weight: 600;
+}
+
+#header-1 div span a {
+    font-weight: 100;
+}
+
+#header-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 24px 80px 24px 100px;
+}
+
+#header-2 h1 a {
+    color: black;
+}
+
+#header-2 ul li {
+    padding: 5px 20px;
+    color: #4d4d4d;
+}
+
+#Services-menu {
+    position: relative;
+}
+
+#Services-menu:hover #Services-submenu {
+    opacity: 1;
+    z-index: 99;
+}
+
+#Services-menu ul li {
+    width: 200px;
+    height: 45px;
+    padding: 0px;
+}
+
+#Services-menu svg {
+    position: absolute;
+    fill: #4d4d4d;
+    margin: 0 0 0 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#Services-submenu {
+    position: absolute;
+    display: block;
+    z-index: -99;
+    opacity: 0;
+    background-color: white;
+    box-shadow: 0px 14px 24px -4px rgba(0, 0, 0, 0.1);
+    border-top: 2.2px solid #0d0cb5;
+    left: 0px;
+    top: 30px;
+    transition: .2s;
+}
+
+#Services-submenu li a {
+    display: inline-block;
+    padding: 9px 20px;
+    width: 200px;
+    height: 45px;
+    align-items: center;
+}
+
+#Services-submenu li:hover {
+    background: #f4f5f9;
+    color: #25262a;
+}
+
+#pagina a {
+    color: #0d0cb5;
+}
+
+#banner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 400px;
+    color: white;
+    background-image: url(hero_1.jpg.webp);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+#banner div {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+    height: 215px;
+}
+
+#banner div h1 {
+    margin-bottom: 8px;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+#banner div p {
+    margin-bottom: 48px;
+    opacity: 40%;
+    font-size: 18px;
+    font-weight: 50;
+}
+
+#form-section {
+    padding: 80px 0;
+}
+
+#form-section .container {
+    grid-template-columns: 2fr 1fr;
+    width: 60%;
+    margin: 0 auto;
+    grid-template-areas: "a b"
+        "a c";
+}
+
+#form-section .container div div,
+#form-section form {
+    background-color: white;
+}
+
+#form-section form {
+    padding: 3em;
+    height: 100%;
+}
+
+#form-section form h2 {
+    margin-bottom: 1.5em;
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+#form-section form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#form-section form .container-2 {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+}
+
+#form-section form div {
+    height: auto;
+    margin-bottom: 16px;
+    padding: 0 15px;
+}
+
+#message-txt {
+    display: block;
+    height: 180px;
+    padding: 6px 12px;
+    border-radius: 30px;
+    border: 1px solid #ced4da;
+    background-color: transparent;
+    width: 100%;
+    overflow: auto;
+    resize: vertical;
+}
+
+#message-txt::placeholder {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+}
+
+#Submit-Input {
+    text-transform: uppercase;
+    padding: 15px 30px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 0px;
+    border-radius: 30px;
+    background-color: #0d0cb5;
+    color: white;
+}
+
+#Second-collumn {
+    padding: 0 15px;
+}
+
+#First-row,
+#Second-row {
+    padding: 1.5em;
+    margin-bottom: 1em;
+    width: 455px;
+    line-height: 1.7;
+}
+
+#First-row a {
+    color: #0d0cb5;
+    transition: .3s;
+    margin-bottom: 1.5em;
+}
+
+#First-row a:hover {
+    color: #08076d;
+}
+
+#Second-row h3, #Second-row p {
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+#Second-row p {
+    color: #4d4d4d;
+}
+
+#Second-row a {
+    background-color: #0d0cb5;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    padding: 15px 30px;
+    letter-spacing: .1em;
+    border-radius: 50px;
+}
+
+#Made {
+    width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3em;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+#Made p a {
+    color: #bfbfbf;
+    transition: .3s;
+}
+
+#Made p a:hover {
+    color: white;
+}
+
+#Input-Email {
+    width: 100%;
+    height: 100%;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+}
+
+#Input-Send {
+    height: 100%;
+    padding: 6px 12px;
+    font-size: 1rem;
+    position: absolute;
+    left: 90%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 0px;
+    background-color: #0d0cb5;
+    color: white;
+}
+
+.container,
+.container-2 {
+    display: grid;
+}
+
+.Text-Inputs {
+    padding: 6px 12px;
+    border-radius: 30px;
+    border: 1px solid #ced4da;
+    background-color: transparent;
+    width: 100%;
+    height: 43px;
+}
+
+.Bold-Paragraph {
+    font-weight: 700;
+    font-size: 1em;
+    padding-bottom: 2px;
+}
+
+.Margin-Paragraph {
+    color: #4d4d4d;
+    margin-bottom: 1.5em;
+}
